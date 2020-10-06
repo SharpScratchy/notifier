@@ -1,7 +1,7 @@
-var assert = require('assert');
+var assert = require("assert");
 
-describe('Hello', () => {
-  it('world!', () => {
+describe("Hello", () => {
+  it("world!", () => {
     assert(true);
   });
 });
