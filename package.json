@@ -1,0 +1,25 @@
+{
+  "name": "@sharpscratchy/notifier",
+  "version": "0.0.0",
+  "description": "Notifiers allow you to trigger callbacks accross your app when a variable changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharpScratchy/notifier.git"
+  },
+  "keywords": [
+    "notifier",
+    "change",
+    "observable",
+    "variable"
+  ],
+  "author": "SharpScratchy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SharpScratchy/notifier/issues"
+  },
+  "homepage": "https://github.com/SharpScratchy/notifier#readme"
+}
