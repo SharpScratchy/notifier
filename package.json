@@ -4,7 +4,7 @@
   "description": "Notifiers allow you to trigger callbacks accross your app when a variable changes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/SharpScratchy/notifier/issues"
   },
-  "homepage": "https://github.com/SharpScratchy/notifier#readme"
+  "homepage": "https://github.com/SharpScratchy/notifier#readme",
+  "devDependencies": {
+    "mocha": "^8.1.3"
+  }
 }
