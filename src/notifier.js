@@ -13,8 +13,10 @@ const notifierFactory = () => {
     };
 
     const setValue = (newValue) => {
-      value = newValue;
-      Object.values(callbacks).forEach((cb) => cb(newValue));
+      if (newValue !== value) {
+        value = newValue;
+        Object.values(callbacks).forEach((cb) => cb(newValue));
+      }
     };
 
     return [subscribeToValue, setValue];

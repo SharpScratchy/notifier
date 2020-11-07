@@ -61,6 +61,16 @@ describe("Notifier", () => {
 
       assert(value === "new value");
     });
+
+    it("Should not call the callback if value is the same", () => {
+      let haveBeenCalled = 0;
+      const [subscribeToValue, setValue] = notifier.create("default");
+
+      subscribeToValue((v) => ++haveBeenCalled);
+      setValue("default");
+
+      assert(haveBeenCalled === 1);
+    });
   });
 
   describe("Given unsubscribe", () => {
