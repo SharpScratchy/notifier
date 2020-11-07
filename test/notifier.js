@@ -20,6 +20,14 @@ describe("Notifier", () => {
 
       assert(value === "default");
     });
+    it("Value can be false", () => {
+      let value;
+      const [subscribeToValue, setValue] = notifier.create(false);
+
+      subscribeToValue((v) => (value = v));
+
+      assert(value === false);
+    });
   });
 
   describe("Given no default value", () => {

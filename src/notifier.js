@@ -1,6 +1,6 @@
 const notifierFactory = () => {
   const create = (defaultValue) => {
-    let value = defaultValue || null;
+    let value = defaultValue !== undefined ? defaultValue : null;
     const callbacks = {};
 
     const subscribeToValue = (cb) => {
