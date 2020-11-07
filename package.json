@@ -1,6 +1,6 @@
 {
   "name": "@sharpscratchy/notifier",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Notifiers allow you to trigger callbacks accross your app when a variable changes",
   "main": "index.js",
   "scripts": {
