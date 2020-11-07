@@ -71,6 +71,16 @@ describe("Notifier", () => {
 
       assert(haveBeenCalled === 1);
     });
+
+    it("Can force propagation during update", () => {
+      let haveBeenCalled = 0;
+      const [subscribeToValue, setValue] = notifier.create("default");
+
+      subscribeToValue((v) => ++haveBeenCalled);
+      setValue("default", true);
+
+      assert(haveBeenCalled === 2);
+    });
   });
 
   describe("Given unsubscribe", () => {

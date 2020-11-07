@@ -12,8 +12,8 @@ const notifierFactory = () => {
       return () => delete callbacks[id];
     };
 
-    const setValue = (newValue) => {
-      if (newValue !== value) {
+    const setValue = (newValue, forcedUpdate) => {
+      if (forcedUpdate || newValue !== value) {
         value = newValue;
         Object.values(callbacks).forEach((cb) => cb(newValue));
       }
